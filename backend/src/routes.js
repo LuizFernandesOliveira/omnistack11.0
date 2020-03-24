@@ -1,10 +1,9 @@
 const express = require('express');
 
-const app = express();
+const routes = express.Router();
 
-app.use(express.json());
 
-app.get('/:id', (request, response) => {
+routes.get('/:id', (request, response) => {
     const params = request.params;
 
     console.log(params);
@@ -15,4 +14,4 @@ app.get('/:id', (request, response) => {
     });
 });
 
-app.listen(3333);
+module.exports = routes;

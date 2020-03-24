@@ -4,7 +4,7 @@
   "description": "Este site foi desenvolvido durante a 11º semana OmniStack",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
