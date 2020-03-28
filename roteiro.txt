@@ -1,0 +1,34 @@
+nodejs
+project Omnistack11.0
+{
+    commands {
+        npm init -y : "inicia um projeto",
+        npm install : "instala todas as dependencias do projeto
+    }
+    commands utilized {
+        npm install express : "utilizado para o sistema de rotas",
+        npm install nodemon -D : "utilizado para facilita o desenvolvimento",
+        npm install knex : "dependencia para manipular o banco de dados por query builder",
+        npm install sqlite3 : "baixando o banco de dados que se vai usar",
+        npx knex init : "inicia o knexfile paara configuranao do ambiente de configuraçao do db",
+        npx knex migrate:make create_name_database
+        npm install cors
+    }
+    roteiro {
+        001 - instale o express
+        002 - instale o nodemon
+        003 - instale o knex
+        004 - instale o banco de dados
+        005 - inicie o knex
+        006 - crie a pasta /src
+        007 - mova o index.js para /src e altere o arquivo package.json => start : nodemon src/index.js
+        008 - crie o arquivo routes e importa ele em index.js
+        009 - configura o knexfile.js => filename : /src/database/db.sqlite3
+        010 - analise as entidades e funcionalidades da aplicaçao
+        011 - cria a pasta src/database/migrations e configura o knexfile.js => development => new(migrations: {directory: './src/database/migrations'}, useNullAsDefault: true,) e crie as tabelas do banco de dados com o knex
+        012 - configura as tabelas nas migrations e executa o comando latest
+        013 - cria o /src/database/connection.js
+        014 - desestruturar os arquivos com /src/controllers
+        014 - instale o cors
+    }
+}

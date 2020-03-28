@@ -1,22 +1,14 @@
 {
-  "name": "omnistack11.0",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "Este site foi desenvolvido durante a 11º semana OmniStack",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon src/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LuizFernandesOliveira/omnistack11.0.git"
-  },
   "keywords": [],
-  "author": "LuizFernadesOliveira",
+  "author": "LuizFernandesOliveira",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LuizFernandesOliveira/omnistack11.0/issues"
-  },
-  "homepage": "https://github.com/LuizFernandesOliveira/omnistack11.0#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",

@@ -1,6 +1,8 @@
-const connection = require('../database/connection');
-
+//para criar o ID
 const crypto = require('crypto');
+
+//importando a conecção com o banco
+const connection = require('../database/connection');
 
 module.exports = {
     async index(request, response) {
@@ -9,9 +11,10 @@ module.exports = {
         return response.json(ongs);
     },
 
-    async create(request, response) {
-        const {name, email, whatsapp, city, uf } = request.body;
+    async create(request, response){
+        const {name, email, whatsapp, city, uf} = request.body;
 
+        //gerando ID aleatorio
         const id = crypto.randomBytes(4).toString('HEX');
 
         await connection('ongs').insert({
@@ -21,8 +24,7 @@ module.exports = {
             whatsapp,
             city,
             uf,
-        });
-
+        }) 
         return response.json({ id });
     }
 };
